@@ -6,8 +6,7 @@ package grafos;
 
 
 import java.util.Scanner;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+
 
 public class Grafos {
 
@@ -32,7 +31,7 @@ public class Grafos {
             sc.nextLine();
             switch(menu){
                 case 1:
-                    salir = 1;
+                    salir = 1; //se vuelve a 1 para poder entrar al bucle while despues de asignarle 0 a salir
                     while(salir != 0){
                         System.out.println("Ingrese el nombre del vertice:");
                         nombre = sc.nextLine();
@@ -64,13 +63,8 @@ public class Grafos {
                    
                 case 3:
                     grafo.mostrarMatriz();
-                    
-                    break;
-                    
+                    break;                                        
             }
-            
         }
-        
     }
-    
 }

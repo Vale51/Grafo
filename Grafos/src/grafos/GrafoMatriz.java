@@ -58,8 +58,6 @@ public class GrafoMatriz {
         int va, vb;
         va = numVertice(a);
         vb = numVertice(b);
-        System.out.println("va: " + va);
-        System.out.println("vb: " + vb);
         if (va < 0 || vb < 0) throw new Exception ("Vértice no existe");
         matAd[va][vb] = 1;
     }
